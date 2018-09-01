@@ -50,7 +50,7 @@ System.register('sijad/recaptcha/main', ['flarum/app', 'flarum/extend', 'flarum/
           if (isAvail()) {
             render();
           } else {
-            $.getScript('https://www.google.com/recaptcha/api.js?hl=' + app.locale + '&render=explicit', function () {
+            $.getScript('https://www.recaptcha.net/recaptcha/api.js?hl=' + app.locale + '&render=explicit', function () {
               var attemps = 0;
               var interval = setInterval(function () {
                 ++attemps;
